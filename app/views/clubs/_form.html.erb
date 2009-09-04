@@ -1,0 +1,12 @@
+<% form_for @club do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :creation_date %><br />
+    <%= f.date_select :creation_date %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

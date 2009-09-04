@@ -1,0 +1,19 @@
+<% title "Clubs" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Creation Date</th>
+  </tr>
+  <% for club in @clubs %>
+    <tr>
+      <td><%=h club.name %></td>
+      <td><%=h club.creation_date %></td>
+      <td><%= link_to "Show", club %></td>
+      <td><%= link_to "Edit", edit_club_path(club) %></td>
+      <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Club", new_club_path %></p>

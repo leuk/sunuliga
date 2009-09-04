@@ -1,0 +1,16 @@
+<% title "Club" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @club.name %>
+</p>
+<p>
+  <strong>Creation Date:</strong>
+  <%=h @club.creation_date %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_club_path(@club) %> |
+  <%= link_to "Destroy", @club, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", clubs_path %>
+</p>
