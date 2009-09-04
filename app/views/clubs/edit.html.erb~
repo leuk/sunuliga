@@ -1,3 +1,3 @@
-<% title t('edit_club') %>
+<% title "Edit Club" %>
 <%= render :partial => 'form' %>
 

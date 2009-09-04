@@ -1,12 +1,12 @@
 <div id = "clubs-#{club.id}">
 <%= club.name %>
  <%= club.creation_date %>
- <a href = "clubs-de-foot/<%= club.id %>" title = "Détails du club - g<%= club.name %>">
-  <%=t 'show_one_club' %>
+ <a href = "clubs-de-foot/<%= club.id %>" title = "<%=t(:show_club)%>">
+  <%=t(:show_club)%>
  </a>
- <a href = "clubs-de-foot/<%= club.id %>/edit" title = "Modifier le club - <%= club.name %>">
-  <%=t 'mod_one_club' %>
+ <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t(:edit_club)%>">
+  <%=t(:edit_club)%>
  </a>
- <%= link_to t('del_one_club') , club, :title => t('del_one_club') , :confirm => 'Are you sure?', :method => :delete %>
+ <%= link_to t(:delete_club) , club, :title => t(:delete_club) , :confirm => 'Are you sure?', :method => :delete %>
 </div>
 

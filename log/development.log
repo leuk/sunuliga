@@ -1392,3 +1392,490 @@ Rendered clubs/_club (90.6ms)
 Rendered clubs/_club (10.3ms)
 Rendered clubs/_club (20.6ms)
 Completed in 637ms (View: 454, DB: 7) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:17:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (217.7ms)
+Completed in 341ms (View: 247, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:20:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (67.1ms)
+Completed in 157ms (View: 97, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:23:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (63.2ms)
+Completed in 165ms (View: 94, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:24:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (48.0ms)
+Completed in 124ms (View: 65, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:26:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (61.9ms)
+Completed in 148ms (View: 94, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:57:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (362.0ms)
+Completed in 657ms (View: 381, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 22:58:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (1507.1ms)
+Completed in 1714ms (View: 1651, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:04:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (222.8ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (71.3ms)
+Rendered clubs/_club (5.5ms)
+Rendered clubs/_club (5.5ms)
+Completed in 443ms (View: 191, DB: 224) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-04 23:04:30) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"clubs"}
+  [4;35;1mClub Load (76.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 3) [0m
+    [35;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (40.2ms)
+Completed in 248ms (View: 102, DB: 77) | 200 OK [http://localhost/clubs-de-foot/3/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.9ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-04 23:05:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 3) [0m
+    [36;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (51.1ms)
+Completed in 178ms (View: 91, DB: 6) | 200 OK [http://localhost/clubs-de-foot/3/edit]
+  [4;35;1mSQL (13.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 23:19:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (81.1ms)
+Completed in 1066ms (View: 412, DB: 14) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 23:19:15) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (11.2ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 126ms (View: 56, DB: 12) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 23:25:00) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (13.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 250ms (View: 177, DB: 15) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 23:26:10) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 161ms (View: 89, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 23:26:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (2.9ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 589ms (View: 510, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 23:28:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 159ms (View: 87, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:28:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (39.9ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (42.4ms)
+Rendered clubs/_club (15.0ms)
+Rendered clubs/_club (7.0ms)
+Completed in 191ms (View: 104, DB: 41) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:29:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (6.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (54.2ms)
+Rendered clubs/_club (6.7ms)
+Rendered clubs/_club (6.5ms)
+Completed in 178ms (View: 133, DB: 8) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:30:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.6ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (45.5ms)
+Rendered clubs/_club (16.7ms)
+Rendered clubs/_club (7.4ms)
+Completed in 588ms (View: 127, DB: 7) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (1.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:30:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (14.0ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (58.6ms)
+Rendered clubs/_club (6.6ms)
+Rendered clubs/_club (6.5ms)
+Completed in 184ms (View: 122, DB: 16) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:32:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (14.2ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (62.7ms)
+Rendered clubs/_club (8.2ms)
+Rendered clubs/_club (19.5ms)
+Completed in 223ms (View: 158, DB: 15) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:33:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (6.7ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (53.0ms)
+Rendered clubs/_club (6.1ms)
+Rendered clubs/_club (15.8ms)
+Completed in 179ms (View: 120, DB: 8) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:46:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (interpolation argument name missing in "Modifier Le Club - {{name}}") on line #8 of app/views/clubs/_club.html.erb:
+5:   <%=t 'show_club' %>
+6:  </a>
+7:  <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t 'edit_club' , :name => club.name  %>">
+8:   <%=t 'edit_club' %>
+9:  </a>
+10:  <%= link_to t('delete_club') , club, :title => t('delete_club') , :confirm => 'Are you sure?', :method => :delete %>
+11: </div>
+
+    app/views/clubs/_club.html.erb:8
+    app/views/clubs/index.html.erb:2
+
+Rendered rescues/_trace (447.4ms)
+Rendered rescues/_request_and_response (30.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:46:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (6.9ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (interpolation argument name missing in "Modifier Le Club - {{name}}") on line #8 of app/views/clubs/_club.html.erb:
+5:   <%=t 'show_club' %>
+6:  </a>
+7:  <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t('edit_club' , :name => club.name)  %>">
+8:   <%=t 'edit_club' %>
+9:  </a>
+10:  <%= link_to t('delete_club') , club, :title => t('delete_club') , :confirm => 'Are you sure?', :method => :delete %>
+11: </div>
+
+    app/views/clubs/_club.html.erb:8
+    app/views/clubs/index.html.erb:2
+
+Rendered rescues/_trace (673.6ms)
+Rendered rescues/_request_and_response (10.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:48:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (interpolation argument name missing in "Modifier Le Club - {{name}}") on line #8 of app/views/clubs/_club.html.erb:
+5:   <%=t 'show_club' %>
+6:  </a>
+7:  <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t('edit_club',:name => club.name)%>">
+8:   <%=t 'edit_club' %>
+9:  </a>
+10:  <%= link_to t('delete_club') , club, :title => t('delete_club') , :confirm => 'Are you sure?', :method => :delete %>
+11: </div>
+
+    app/views/clubs/_club.html.erb:8
+    app/views/clubs/index.html.erb:2
+
+Rendered rescues/_trace (1121.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:57:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.1ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (interpolation argument name missing in "Modifier Le Club - {{name}}") on line #8 of app/views/clubs/_club.html.erb:
+5:   <%=t(:show_club)%>
+6:  </a>
+7:  <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t('edit_club',:name => club.name)%>">
+8:   <%=t('edit_club') %>
+9:  </a>
+10:  <%= link_to t(:delete_club) , club, :title => t('delete_club') , :confirm => 'Are you sure?', :method => :delete %>
+11: </div>
+
+    app/views/clubs/_club.html.erb:8
+    app/views/clubs/index.html.erb:2
+
+Rendered rescues/_trace (486.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 23:57:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (14.4ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (interpolation argument name missing in "Modifier Le Club - {{name}}") on line #7 of app/views/clubs/_club.html.erb:
+4:  <a href = "clubs-de-foot/<%= club.id %>" title = "<%=t(:show_club)%>">
+5:   <%=t(:show_club)%>
+6:  </a>
+7:  <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t('edit_club')%>">
+8:   <%=t('edit_club') %>
+9:  </a>
+10:  <%= link_to t(:delete_club) , club, :title => t('delete_club') , :confirm => 'Are you sure?', :method => :delete %>
+
+    app/views/clubs/_club.html.erb:7
+    app/views/clubs/index.html.erb:2
+
+Rendered rescues/_trace (523.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 00:00:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.6ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (106.4ms)
+Rendered clubs/_club (6.2ms)
+Rendered clubs/_club (6.8ms)
+Completed in 318ms (View: 263, DB: 7) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 00:12:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (10.2ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (88.7ms)
+Rendered clubs/_club (17.4ms)
+Rendered clubs/_club (18.8ms)
+Completed in 416ms (View: 318, DB: 11) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-05 00:12:45) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"clubs"}
+  [4;35;1mClub Load (19.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 3) [0m
+    [35;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (40.9ms)
+Completed in 172ms (View: 84, DB: 20) | 200 OK [http://localhost/clubs-de-foot/3/edit]
