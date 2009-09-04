@@ -1,0 +1,8 @@
+<div id = "clubs-#{club.id}">
+<%= club.name %>
+      <%= club.creation_date %>
+      <a href = "clubs-de-foot/<%= club.id %>"><%=t 'show_one_club' %></a>
+      <a href = "clubs-de-foot/<%= club.id %>/edit"><%=t 'mod_one_club' %></a>
+      <%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %>
+</div>
+

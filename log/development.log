@@ -1,0 +1,1291 @@
+  [4;36;1mSQL (53.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 11:17:01) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:17:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (0.0ms)[0m   [0;1mPGError: ERROR: relation "clubs" does not exist
+: SELECT * FROM "clubs" [0m
+
+ActiveRecord::StatementInvalid (PGError: ERROR:  relation "clubs" does not exist
+: SELECT * FROM "clubs" ):
+  app/controllers/clubs_controller.rb:3:in `index'
+
+Rendered rescues/_trace (253.3ms)
+Rendered rescues/_request_and_response (31.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (1347.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (713.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateClubs (20090904085631)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1131.6ms)[0m   [0;1mCREATE TABLE "clubs" ("id" serial primary key, "name" character varying(255), "creation_date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (151.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090904085631')[0m
+  [4;36;1mSQL (97.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:18:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (6.2ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering clubs/index
+
+ActionView::TemplateError (undefined method `title' for #<ActionView::Base:0xb7b431d0>) on line #1 of app/views/clubs/index.html.erb:
+1: <% title "Clubs" %>
+2: 
+3: <table>
+4:   <tr>
+
+    app/views/clubs/index.html.erb:1
+
+Rendered rescues/_trace (597.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:21:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 199ms (View: 164, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:32:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (84.9ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 258ms (View: 68, DB: 86) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 11:33:01) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (1018.6ms)
+Completed in 1691ms (View: 1565, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-04 11:33:16) [POST]
+  Parameters: {"club"=>{"name"=>"Jeanne d'arc de dakar", "creation_date(1i)"=>"2009", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4"}, "commit"=>"Submit", "action"=>"create", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "controller"=>"clubs"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (177.9ms)[0m   [0mINSERT INTO "clubs" ("name", "created_at", "creation_date", "updated_at") VALUES(E'Jeanne d''arc de dakar', '2009-09-04 09:33:17.014830', '2009-09-04', '2009-09-04 09:33:17.014830') RETURNING "id"[0m
+  [4;36;1mSQL (28.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/clubs-de-foot/1
+Completed in 1160ms (DB: 209) | 302 Found [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (15.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 11:33:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (2.9ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 143ms (View: 68, DB: 19) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:33:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.4ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 86ms (View: 46, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:34:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.8ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 126ms (View: 71, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:35:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (10.8ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 181ms (View: 105, DB: 15) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:36:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.4ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 112ms (View: 70, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 11:36:14) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:36:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (4.8ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 132ms (View: 94, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 11:36:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (2.9ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 93ms (View: 27, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:40:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (14.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+ERROR: compiling _run_erb_app47views47clubs47index46html46erb RAISED compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...at(( t 'clubs_road' + "/" club.id ).to_s); @output_buffer.co...
+                              ^
+Function body:           def _run_erb_app47views47clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Clubs" ; @output_buffer.concat "\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Creation Date</th>\n  </tr>\n  "
+
+
+
+
+
+
+;  for club in @clubs ; @output_buffer.concat "\n    <tr>\n      <td>"
+
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat((h club.creation_date ).to_s); @output_buffer.concat "</td>\n      <td><a href = \""
+; @output_buffer.concat(( t 'clubs_road' + "/" club.id ).to_s); @output_buffer.concat "\">D\303\251tails du club </a></td>\n      <td>"
+; @output_buffer.concat(( link_to "Edit", edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat(( link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n    </tr>\n  "
+
+;  end ; @output_buffer.concat "\n</table>\n\n<p>"
+
+
+; @output_buffer.concat(( link_to "New Club", new_club_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:23:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...at(( t 'clubs_road' + "/" club.id ).to_s); @output_buffer.co...
+                              ^) on line #12 of app/views/clubs/index.html.erb:
+9:     <tr>
+10:       <td><%=h club.name %></td>
+11:       <td><%=h club.creation_date %></td>
+12:       <td><a href = "<%= t 'clubs_road' + "/" club.id %>">Détails du club </a></td>
+13:       <td><%= link_to "Edit", edit_club_path(club) %></td>
+14:       <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+15:     </tr>
+
+    app/views/clubs/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (1166.9ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (2.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:40:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.7ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+ERROR: compiling _run_erb_app47views47clubs47index46html46erb RAISED compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.co...
+                              ^
+Function body:           def _run_erb_app47views47clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Clubs" ; @output_buffer.concat "\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Creation Date</th>\n  </tr>\n  "
+
+
+
+
+
+
+;  for club in @clubs ; @output_buffer.concat "\n    <tr>\n      <td>"
+
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat((h club.creation_date ).to_s); @output_buffer.concat "</td>\n      <td><a href = \""
+; @output_buffer.concat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.concat "\">D\303\251tails du club </a></td>\n      <td>"
+; @output_buffer.concat(( link_to "Edit", edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat(( link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n    </tr>\n  "
+
+;  end ; @output_buffer.concat "\n</table>\n\n<p>"
+
+
+; @output_buffer.concat(( link_to "New Club", new_club_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:23:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.co...
+                              ^) on line #12 of app/views/clubs/index.html.erb:
+9:     <tr>
+10:       <td><%=h club.name %></td>
+11:       <td><%=h club.creation_date %></td>
+12:       <td><a href = "<%= t 'clubs_road' "/" club.id %>">Détails du club </a></td>
+13:       <td><%= link_to "Edit", edit_club_path(club) %></td>
+14:       <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+15:     </tr>
+
+    app/views/clubs/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (325.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:40:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (14.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+ERROR: compiling _run_erb_app47views47clubs47index46html46erb RAISED compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.co...
+                              ^
+Function body:           def _run_erb_app47views47clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Clubs" ; @output_buffer.concat "\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Creation Date</th>\n  </tr>\n  "
+
+
+
+
+
+
+;  for club in @clubs ; @output_buffer.concat "\n    <tr>\n      <td>"
+
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat((h club.creation_date ).to_s); @output_buffer.concat "</td>\n      <td><a href = \""
+; @output_buffer.concat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.concat "\">D\303\251tails du club </a></td>\n      <td>"
+; @output_buffer.concat(( link_to "Edit", edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat(( link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n    </tr>\n  "
+
+;  end ; @output_buffer.concat "\n</table>\n\n<p>"
+
+
+; @output_buffer.concat(( link_to "New Club", new_club_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:23:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ncat(( t 'clubs_road' "/" club.id ).to_s); @output_buffer.co...
+                              ^) on line #12 of app/views/clubs/index.html.erb:
+9:     <tr>
+10:       <td><%=h club.name %></td>
+11:       <td><%=h club.creation_date %></td>
+12:       <td><a href = "<%= t 'clubs_road' "/" club.id %>">Détails du club </a></td>
+13:       <td><%= link_to "Edit", edit_club_path(club) %></td>
+14:       <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+15:     </tr>
+
+    app/views/clubs/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (586.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:41:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.7ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+ERROR: compiling _run_erb_app47views47clubs47index46html46erb RAISED compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...r.concat(( t 'clubs_road' club.id ).to_s); @output_buffer.co...
+                              ^
+Function body:           def _run_erb_app47views47clubs47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Clubs" ; @output_buffer.concat "\n\n<table>\n  <tr>\n    <th>Name</th>\n    <th>Creation Date</th>\n  </tr>\n  "
+
+
+
+
+
+
+;  for club in @clubs ; @output_buffer.concat "\n    <tr>\n      <td>"
+
+; @output_buffer.concat((h club.name ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat((h club.creation_date ).to_s); @output_buffer.concat "</td>\n      <td><a href = \""
+; @output_buffer.concat(( t 'clubs_road' club.id ).to_s); @output_buffer.concat "\">D\303\251tails du club </a></td>\n      <td>"
+; @output_buffer.concat(( link_to "Edit", edit_club_path(club) ).to_s); @output_buffer.concat "</td>\n      <td>"
+; @output_buffer.concat(( link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete ).to_s); @output_buffer.concat "</td>\n    </tr>\n  "
+
+;  end ; @output_buffer.concat "\n</table>\n\n<p>"
+
+
+; @output_buffer.concat(( link_to "New Club", new_club_path ).to_s); @output_buffer.concat "</p>\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:23:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/template.rb:199:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:343:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1246:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:941:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1322:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:1328:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:527:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:434:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/leukify/Bureau/.projects/sunuliga/clubs/app/views/clubs/index.html.erb:12: syntax error, unexpected tIDENTIFIER, expecting ')'
+...r.concat(( t 'clubs_road' club.id ).to_s); @output_buffer.co...
+                              ^) on line #12 of app/views/clubs/index.html.erb:
+9:     <tr>
+10:       <td><%=h club.name %></td>
+11:       <td><%=h club.creation_date %></td>
+12:       <td><a href = "<%= t 'clubs_road' club.id %>">Détails du club </a></td>
+13:       <td><%= link_to "Edit", edit_club_path(club) %></td>
+14:       <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+15:     </tr>
+
+    app/views/clubs/index.html.erb:23:in `compile!'
+
+Rendered rescues/_trace (299.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:41:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (14.0ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+
+ActionView::TemplateError (undefined method `[]=' for 1:Fixnum) on line #12 of app/views/clubs/index.html.erb:
+9:     <tr>
+10:       <td><%=h club.name %></td>
+11:       <td><%=h club.creation_date %></td>
+12:       <td><a href = "<%= t 'clubs_road' , club.id %>">Détails du club </a></td>
+13:       <td><%= link_to "Edit", edit_club_path(club) %></td>
+14:       <td><%= link_to "Destroy", club, :confirm => 'Are you sure?', :method => :delete %></td>
+15:     </tr>
+
+    app/views/clubs/index.html.erb:12
+    app/views/clubs/index.html.erb:8:in `each'
+    app/views/clubs/index.html.erb:8
+
+Rendered rescues/_trace (355.8ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:41:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.9ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 164ms (View: 122, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:42:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.2ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 110ms (View: 71, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-04 11:43:32) [GET]
+
+ActionController::RoutingError (No route matches "/soccer-clubs/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Fri Sep 04 11:44:04 +0200 2009
+  Status: 500 Internal Server Error
+  undefined method `t' for main:Object
+    /home/leukify/Bureau/.projects/sunuliga/clubs/config/routes.rb:3
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:226:in `draw'
+    /home/leukify/Bureau/.projects/sunuliga/clubs/config/routes.rb:1
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load_without_new_constant_marking'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.3/lib/active_support/dependencies.rb:145:in `load'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:286:in `load_routes!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:266:in `load!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/routing/route_set.rb:281:in `reload'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:59:in `reload_application'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/reloader.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/failsafe.rb:26:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.3/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/static.rb:31:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /home/leukify/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.3/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:48:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.7ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 130ms (View: 92, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 11:48:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (4.7ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 105ms (View: 66, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:25:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (429.7ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 1763ms (View: 1259, DB: 431) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:27:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (9.0ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 126ms (View: 62, DB: 10) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:46:39) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (214.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 1168ms (View: 761, DB: 216) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (8.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 16:46:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (1999.9ms)
+Completed in 2269ms (View: 2162, DB: 10) | 200 OK [http://localhost/clubs/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:47:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (9.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 189ms (View: 129, DB: 11) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:58:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (4.7ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 170ms (View: 111, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 16:58:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.2ms)[0m   [0mSELECT * FROM "clubs" [0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 144ms (View: 87, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 17:06:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (59.2ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 707ms (View: 562, DB: 60) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 17:07:33) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 17:07:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (527.5ms)
+Completed in 1044ms (View: 600, DB: 1) | 200 OK [http://localhost/clubs/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 17:08:01) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (14.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (27.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+  [4;35;1mSQL (3.0ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (610.5ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_file_name" character varying(255)[0m
+
+  [4;35;1mSQL (2.9ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_content_type" character varying(255)[0m
+
+  [4;36;1mSQL (79.8ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_file_size" integer[0m
+
+  [4;35;1mSQL (34.7ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_updated_at" timestamp[0m
+
+  [4;36;1mSQL (30.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090904143832')[0m
+
+  [4;35;1mSQL (2.3ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:32:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (365.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 1225ms (View: 788, DB: 367) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (24.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:33:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 198ms (View: 96, DB: 31) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (4.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:33:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (4.9ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 483ms (View: 102, DB: 10) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:34:06) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:40:17) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:40:32) [GET]
+  Parameters: {"action"=>"1", "id"=>"shgow", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:40:43) [GET]
+  Parameters: {"action"=>"1", "id"=>"show", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:40:51) [GET]
+  Parameters: {"action"=>"1", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#1 (for 127.0.0.1 at 2009-09-04 20:41:00) [GET]
+  Parameters: {"action"=>"1", "id"=>"edit", "controller"=>"clubs"}
+
+ActionController::UnknownAction (No action responded to 1. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 20:41:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (944.3ms)
+Completed in 1144ms (View: 1027, DB: 1) | 200 OK [http://localhost/clubs/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:43:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (4.9ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 227ms (View: 150, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 20:43:20) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (79.2ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 588ms (View: 433, DB: 80) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-04 20:43:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (11.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (55.4ms)
+Completed in 176ms (View: 88, DB: 12) | 200 OK [http://localhost/clubs-de-foot/1/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:43:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (30.3ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 194ms (View: 122, DB: 31) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:44:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.0ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 132ms (View: 80, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:44:40) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 140ms (View: 87, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (4.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:56:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (65.8ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (67.0ms)
+Completed in 690ms (View: 404, DB: 71) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 20:56:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (46.9ms)
+Completed in 111ms (View: 55, DB: 1) | 200 OK [http://localhost/clubs/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:57:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (50.0ms)
+Completed in 142ms (View: 97, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-04 20:57:25) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (43.8ms)
+Completed in 110ms (View: 61, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-04 20:57:41) [POST]
+  Parameters: {"club"=>{"name"=>"Jaraaf", "creation_date(1i)"=>"2004", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4"}, "commit"=>"Submit", "action"=>"create", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "controller"=>"clubs"}
+  [4;35;1mSQL (46.1ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (362.2ms)[0m   [0;1mINSERT INTO "clubs" ("name", "club_icon_updated_at", "created_at", "creation_date", "updated_at", "club_icon_file_size", "club_icon_file_name", "club_icon_content_type") VALUES(E'Jaraaf', NULL, '2009-09-04 18:57:41.603363', '2004-09-04', '2009-09-04 18:57:41.603363', NULL, NULL, NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (124.0ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/clubs-de-foot/2
+Completed in 1237ms (DB: 533) | 302 Found [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (2.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-04 20:57:42) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 112ms (View: 34, DB: 6) | 200 OK [http://localhost/clubs-de-foot/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:57:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (62.9ms)
+Rendered clubs/_club (4.8ms)
+Completed in 188ms (View: 135, DB: 7) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:59:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (63.3ms)
+Rendered clubs/_club (4.9ms)
+Completed in 173ms (View: 127, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-04 20:59:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (71.8ms)
+Rendered clubs/_club (5.1ms)
+Completed in 249ms (View: 155, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
