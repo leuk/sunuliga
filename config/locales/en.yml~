@@ -1,9 +1,0 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
-en:
-  hello: "Hello world"
-  clubs_title: "Soccer Clubs Listing "
-  add_new_club: "Add New Club "
-  show_one_club: "Club Details "
-  mod_one_club: "Modify Club Details "
