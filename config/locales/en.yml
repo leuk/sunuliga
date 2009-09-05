@@ -9,6 +9,9 @@ en:
   show_club: "Club Details - "
   edit_club: "Modify Club Details - "
   delete_club: "Supprimer Club - "
+  club_deleted: Club Deleted
+  club_updated: Club Updqted
+  club_saved: Club Saved
   # Form Fields
   field_name: "Club Name"
   field_creation_date: "Club Creation Date"

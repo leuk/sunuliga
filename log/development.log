@@ -2623,3 +2623,167 @@ Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 05:47:37) [GET]
 Rendering template within layouts/application
 Rendering clubs/index
 Completed in 82ms (View: 26, DB: 6) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 06:05:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.5ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 125ms (View: 75, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (34.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+  [4;35;1mSQL (0.9ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (828.2ms)[0m   [0;1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "club_id" integer NOT NULL, "int_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (542.6ms)[0m   [0mALTER TABLE teams ADD CONSTRAINT teams_clubs_fkey FOREIGN KEY (club_id) REFERENCES clubs (id);[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:111:in `add_foreign_key'[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090905040458')[0m
+
+  [4;35;1mSQL (6.2ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;35;1mSQL (218.9ms)[0m   [0mDROP TABLE "teams"[0m
+
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "teams" does not exist
+: ALTER TABLE teams DROP CONSTRAINT teams_clubs_fkey;[0m
+    [36;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:115:in `remove_foreign_key'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (4.8ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "teams" does not exist
+: ALTER TABLE teams DROP CONSTRAINT teams_clubs_fkey;[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:115:in `remove_foreign_key'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;35;1mSQL (0.0ms)[0m   [0mPGError: ERROR: relation "teams" does not exist
+: ALTER TABLE teams DROP CONSTRAINT teams_clubs_fkey;[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:115:in `remove_foreign_key'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (115.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+
+  [4;35;1mSQL (118.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (350.6ms)[0m   [0;1mCREATE TABLE "clubs" ("id" serial primary key, "name" character varying(255), "creation_date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (170.0ms)[0m   [0mCREATE UNIQUE INDEX "index_clubs_on_name" ON "clubs" ("name")[0m
+
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090904085631')[0m
+
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+  [4;36;1mSQL (3.3ms)[0m   [0;1mBEGIN[0m
+
+  [4;35;1mSQL (75.9ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_file_name" character varying(255)[0m
+
+  [4;36;1mSQL (2.9ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_content_type" character varying(255)[0m
+
+  [4;35;1mSQL (16.5ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_file_size" integer[0m
+
+  [4;36;1mSQL (2.3ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_updated_at" timestamp[0m
+
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090904143832')[0m
+
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCOMMIT[0m
+
+Migrating to CreateTeams (20090905040458)
+  [4;35;1mSQL (1.8ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (51.9ms)[0m   [0;1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "club_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (36.7ms)[0m   [0mALTER TABLE teams ADD CONSTRAINT teams_clubs_fkey FOREIGN KEY (club_id) REFERENCES clubs (id);[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:111:in `add_foreign_key'[0m
+  [4;36;1mSQL (11.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090905040458')[0m
+
+  [4;35;1mSQL (513.6ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;35;1mSQL (10.5ms)[0m   [0mALTER TABLE teams DROP CONSTRAINT teams_clubs_fkey;[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:115:in `remove_foreign_key'[0m
+  [4;36;1mSQL (61.5ms)[0m   [0;1mDROP TABLE "teams"[0m
+
+  [4;35;1mSQL (20.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20090905040458'[0m
+
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+  [4;35;1mSQL (1.1ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (59.8ms)[0m   [0;1mCREATE TABLE "teams" ("id" serial primary key, "name" character varying(255), "club_id" integer NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (44.5ms)[0m   [0mALTER TABLE teams ADD CONSTRAINT teams_clubs_fkey FOREIGN KEY (club_id) REFERENCES clubs (id);[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:111:in `add_foreign_key'[0m
+  [4;36;1mSQL (11.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090905040458')[0m
+
+  [4;35;1mSQL (5.7ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (7.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :teams
+
 
   map.resources :clubs , :as => 'clubs-de-foot'
   map.root :clubs
