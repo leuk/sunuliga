@@ -139,13 +139,15 @@ fr:
 
 # Soccer Clubs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Views & Partials
+# Views & Partials & Flash Messages
   clubs_title: "Tous les clubs de football "
   new_club: "Nouveau Club "
   edit_club: "Modifier Le Club - "
   show_club: "Page Details Du Club - "
   delete_club: "Supprimer Le Club - "
-
+  club_deleted: Club Supprimé
+  club_updated: Club Modifié
+  club_saved: Club Enregistré
  # Form Fields
   field_name: "Nom Du Club"
   field_creation_date: "Date De Creation Du Club"

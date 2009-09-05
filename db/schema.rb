@@ -22,4 +22,6 @@ ActiveRecord::Schema.define(:version => 20090904143832) do
     t.datetime "club_icon_updated_at"
   end
 
+  add_index "clubs", ["name"], :name => "index_clubs_on_name", :unique => true
+
 end

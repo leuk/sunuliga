@@ -1,8 +1,0 @@
-<%title t(:clubs_title)%>
-<%= render @clubs %>
-<p>
-  <a href = "clubs-de-foot/new" title = "<%=t(:new_club)%>">
-    <%=t(:new_club)%>
-  </a>
-</p>
-

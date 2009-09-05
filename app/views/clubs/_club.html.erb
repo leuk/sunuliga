@@ -1,12 +1,9 @@
 <div id = "clubs-#{club.id}">
-<%= club.name %>
+<%=image_tag club.club_icon.url(:thumb)%>
+<%=club.name%>
  <%= club.creation_date %>
- <a href = "clubs-de-foot/<%= club.id %>" title = "<%=t(:show_club)%>">
-  <%=t(:show_club)%>
- </a>
- <a href = "clubs-de-foot/<%= club.id %>/edit" title = "<%=t(:edit_club)%>">
-  <%=t(:edit_club)%>
- </a>
- <%= link_to t(:delete_club) , club, :title => t(:delete_club) , :confirm => 'Are you sure?', :method => :delete %>
+  <%=link_to t(:show_club) , club_path(club) , :title => t(:show_club) %>
+  <%=link_to t(:edit_club) , edit_club_path(club.id) , :title => t(:edit_club) %>
+  <%=link_to t(:delete_club) , club, :title => t(:delete_club) , :confirm => 'Are you sure?', :method => :delete%>
 </div>
 

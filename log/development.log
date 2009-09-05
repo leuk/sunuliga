@@ -1879,3 +1879,747 @@ Rendering template within layouts/application
 Rendering clubs/edit
 Rendered clubs/_form (40.9ms)
 Completed in 172ms (View: 84, DB: 20) | 200 OK [http://localhost/clubs-de-foot/3/edit]
+  [4;36;1mSQL (13.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-05 00:47:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  /home/leukify/.gem/ruby/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip.rb:283:in `validates_attachment_presence'
+  app/models/club.rb:10
+  app/controllers/clubs_controller.rb:11:in `new'
+
+Rendered rescues/_trace (875.2ms)
+Rendered rescues/_request_and_response (6.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-05 00:47:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  /home/leukify/.gem/ruby/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip.rb:283:in `validates_attachment_presence'
+  app/models/club.rb:10
+  app/controllers/clubs_controller.rb:11:in `new'
+
+Rendered rescues/_trace (312.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-05 00:47:54) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  /home/leukify/.gem/ruby/1.8/gems/thoughtbot-paperclip-2.3.1/lib/paperclip.rb:283:in `validates_attachment_presence'
+  app/models/club.rb:10
+  app/controllers/clubs_controller.rb:11:in `new'
+
+Rendered rescues/_trace (773.5ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-05 00:48:18) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (804.5ms)
+Completed in 1602ms (View: 1227, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-05 00:48:22) [POST]
+  Parameters: {"club"=>{"name"=>"", "creation_date(1i)"=>"2009", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4", "club_icon"=>""}, "commit"=>"enregistrer", "action"=>"create", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "controller"=>"clubs"}
+WARNING: Can't mass-assign these protected attributes: club_icon
+  [4;36;1mSQL (9.8ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mClub Load (61.3ms)[0m   [0mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'') LIMIT 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (36.7ms)
+Completed in 963ms (View: 61, DB: 73) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-05 00:54:40) [POST]
+  Parameters: {"club"=>{"name"=>"Ndiambour de Louga", "creation_date(1i)"=>"2004", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4", "club_icon"=>"Papier peint de la Galerie de photos Windows.jpg"}, "commit"=>"enregistrer", "action"=>"create", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "controller"=>"clubs"}
+WARNING: Can't mass-assign these protected attributes: club_icon
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mClub Load (8.4ms)[0m   [0;1mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Ndiambour de Louga') LIMIT 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (59.6ms)
+Completed in 332ms (View: 189, DB: 11) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-05 00:55:03) [POST]
+  Parameters: {"club"=>{"name"=>"Ndiambour de Louga", "creation_date(1i)"=>"2004", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4", "club_icon"=>#<File:/tmp/RackMultipart20090905-12394-18pcbx6-0>}, "commit"=>"enregistrer", "action"=>"create", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "controller"=>"clubs"}
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mClub Load (7.5ms)[0m   [0mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Ndiambour de Louga') LIMIT 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (289.5ms)[0m   [0;1mINSERT INTO "clubs" ("name", "club_icon_updated_at", "created_at", "creation_date", "updated_at", "club_icon_file_size", "club_icon_file_name", "club_icon_content_type") VALUES(E'Ndiambour de Louga', '2009-09-04 22:55:03.909806', '2009-09-04 22:55:11.543689', '2004-09-04', '2009-09-04 22:55:11.543689', 12049, E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', E'image/jpeg') RETURNING "id"[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/4/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/4/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/4/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;35;1mSQL (116.9ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/clubs-de-foot/4
+Completed in 9167ms (DB: 415) | 302 Found [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 00:55:13) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.2ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 189ms (View: 114, DB: 5) | 200 OK [http://localhost/clubs-de-foot/4]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 00:57:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.5ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Completed in 170ms (View: 64, DB: 4) | 200 OK [http://localhost/clubs-de-foot/4]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 00:57:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (13.0ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (58.3ms)
+Rendered clubs/_club (9.6ms)
+Rendered clubs/_club (9.6ms)
+Rendered clubs/_club (10.8ms)
+Completed in 234ms (View: 175, DB: 14) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 00:57:58) [GET]
+
+ActionController::RoutingError (No route matches "/club_icons/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.9ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:03:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+
+ActionView::TemplateError (undefined local variable or method `club' for #<ActionView::Base:0xb6685054>) on line #2 of app/views/clubs/show.html.erb:
+1: <% title t('show_club') %>
+2: <%= render club %>
+
+    app/views/clubs/show.html.erb:2
+
+Rendered rescues/_trace (298.8ms)
+Rendered rescues/_request_and_response (23.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:03:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (2.9ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (32.8ms)
+Completed in 841ms (View: 765, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (8.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 01:03:52) [GET]
+
+ActionController::RoutingError (No route matches "/club_icons/small/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:03:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"clubs"}
+  [4;35;1mClub Load (15.2ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (71.3ms)
+Completed in 266ms (View: 162, DB: 16) | 200 OK [http://localhost/clubs-de-foot/4]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:04:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.2ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 4) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (63.2ms)
+Completed in 347ms (View: 245, DB: 5) | 200 OK [http://localhost/clubs-de-foot/4]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 01:06:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (107.5ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (112.9ms)
+Rendered clubs/_club (36.0ms)
+Rendered clubs/_club (10.6ms)
+Rendered clubs/_club (10.4ms)
+Completed in 432ms (View: 265, DB: 109) | 200 OK [http://localhost/clubs-de-foot]
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 01:06:01) [GET]
+
+ActionController::RoutingError (No route matches "/club_icons/original/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 01:06:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (17.1ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Rendered clubs/_club (79.8ms)
+Rendered clubs/_club (11.0ms)
+Rendered clubs/_club (32.8ms)
+Rendered clubs/_club (47.3ms)
+Completed in 407ms (View: 290, DB: 18) | 200 OK [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 01:06:24) [GET]
+
+ActionController::RoutingError (No route matches "/club_icons/thumb/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-05 01:06:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (74.0ms)
+Completed in 252ms (View: 168, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#update (for 127.0.0.1 at 2009-09-05 01:06:42) [PUT]
+  Parameters: {"club"=>{"name"=>"Jeanne d'arc de dakar", "creation_date(1i)"=>"2009", "creation_date(2i)"=>"9", "creation_date(3i)"=>"4", "club_icon"=>#<File:/tmp/RackMultipart20090905-12394-1fj9xqg-0>}, "commit"=>"enregistrer", "action"=>"update", "_method"=>"put", "authenticity_token"=>"hRUMIyU/z3wnaUzil00cPz6osfJ6Vd80tzfgwbbwWvk=", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.7ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:29:in `update'[0m
+  [4;35;1mSQL (128.9ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+  [4;36;1mClub Load (106.8ms)[0m   [0;1mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Jeanne d''arc de dakar' AND "clubs".id <> 1) LIMIT 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+  [4;35;1mClub Update (119.9ms)[0m   [0mUPDATE "clubs" SET "club_icon_file_size" = 12049, "updated_at" = '2009-09-04 23:06:51.732622', "club_icon_updated_at" = '2009-09-04 23:06:42.791482', "club_icon_content_type" = E'image/jpeg', "club_icon_file_name" = E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg' WHERE "id" = 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mSQL (67.5ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+Redirected to http://localhost:3000/clubs-de-foot/1
+Completed in 9452ms (DB: 430) | 302 Found [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:06:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (34.4ms)
+Completed in 162ms (View: 83, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (3.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-05 01:07:30) [GET]
+
+ActionController::RoutingError (No route matches "/clubs-de-foot/clubs-de-foot/1" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:08:10) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (32.4ms)
+Completed in 149ms (View: 70, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:11:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (2.9ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (60.5ms)
+Completed in 262ms (View: 145, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:04) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (37.4ms)
+Completed in 180ms (View: 99, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (2.9ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (36.3ms)
+Completed in 172ms (View: 95, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (32.9ms)
+Completed in 156ms (View: 71, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (44.2ms)
+Completed in 180ms (View: 101, DB: 5) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (2.9ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (52.7ms)
+Completed in 201ms (View: 108, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (31.2ms)
+Completed in 162ms (View: 70, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (30.7ms)
+Completed in 145ms (View: 69, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:12:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (39.3ms)
+Completed in 153ms (View: 77, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 01:19:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (26.5ms)
+Completed in 193ms (View: 74, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-05 01:19:09) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (54.6ms)
+Completed in 194ms (View: 104, DB: 4) | 200 OK [http://localhost/clubs-de-foot/1/edit]
+  [4;36;1mSQL (3.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (147.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+
+  [4;35;1mSQL (99.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+
+  [4;36;1mSQL (3.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (129.4ms)[0m   [0;1mCREATE TABLE "clubs" ("id" serial primary key, "name" character varying(255), "creation_date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (9.9ms)[0m   [0mCREATE UNIQUE INDEX "index_clubs_on_name" ON "clubs" ("name")[0m
+
+  [4;36;1mSQL (4.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090904085631')[0m
+
+  [4;35;1mSQL (3.7ms)[0m   [0mCOMMIT[0m
+
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+  [4;36;1mSQL (4.7ms)[0m   [0;1mBEGIN[0m
+
+  [4;35;1mSQL (57.8ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_file_name" character varying(255)[0m
+
+  [4;36;1mSQL (6.7ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_content_type" character varying(255)[0m
+
+  [4;35;1mSQL (2.4ms)[0m   [0mALTER TABLE "clubs" ADD COLUMN "club_icon_file_size" integer[0m
+
+  [4;36;1mSQL (2.2ms)[0m   [0;1mALTER TABLE "clubs" ADD COLUMN "club_icon_updated_at" timestamp[0m
+
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090904143832')[0m
+
+  [4;36;1mSQL (4.5ms)[0m   [0;1mCOMMIT[0m
+
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 05:44:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.4ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 934ms (View: 771, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-05 05:44:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (1189.2ms)
+Completed in 1368ms (View: 1285, DB: 1) | 200 OK [http://localhost/clubs-de-foot/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-05 05:46:38) [POST]
+  Parameters: {"club"=>{"name"=>"Jeanne d'arc de dakar", "creation_date(1i)"=>"2009", "creation_date(2i)"=>"9", "creation_date(3i)"=>"5", "club_icon"=>#<File:/tmp/RackMultipart20090905-5039-13bovwm-0>}, "commit"=>"enregistrer", "action"=>"create", "authenticity_token"=>"e763AOCVHBn5rWIfY7xxhJ8moAT14i84asEpfRh1Muk=", "controller"=>"clubs"}
+  [4;35;1mSQL (2.8ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mClub Load (126.4ms)[0m   [0;1mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Jeanne d''arc de dakar') LIMIT 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (54.4ms)[0m   [0mINSERT INTO "clubs" ("name", "club_icon_updated_at", "created_at", "creation_date", "updated_at", "club_icon_file_size", "club_icon_file_name", "club_icon_content_type") VALUES(E'Jeanne d''arc de dakar', '2009-09-05 03:46:38.486678', '2009-09-05 03:46:44.271030', '2009-09-05', '2009-09-05 03:46:44.271030', 12049, E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', E'image/jpeg') RETURNING "id"[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mSQL (36.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/clubs-de-foot/1
+Completed in 6305ms (DB: 221) | 302 Found [http://localhost/clubs-de-foot]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 05:46:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (11.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (36.7ms)
+Completed in 308ms (View: 199, DB: 13) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#edit (for 127.0.0.1 at 2009-09-05 05:47:25) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (10.7ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:25:in `edit'[0m
+Rendering template within layouts/application
+Rendering clubs/edit
+Rendered clubs/_form (39.7ms)
+Completed in 187ms (View: 116, DB: 12) | 200 OK [http://localhost/clubs-de-foot/1/edit]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#update (for 127.0.0.1 at 2009-09-05 05:47:29) [PUT]
+  Parameters: {"club"=>{"name"=>"Jeanne d'arc de dakar", "creation_date(1i)"=>"2004", "creation_date(2i)"=>"9", "creation_date(3i)"=>"5"}, "commit"=>"enregistrer", "action"=>"update", "_method"=>"put", "authenticity_token"=>"e763AOCVHBn5rWIfY7xxhJ8moAT14i84asEpfRh1Muk=", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.3ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:29:in `update'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+  [4;35;1mClub Load (4.3ms)[0m   [0mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Jeanne d''arc de dakar' AND "clubs".id <> 1) LIMIT 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+  [4;36;1mClub Update (1.9ms)[0m   [0;1mUPDATE "clubs" SET "updated_at" = '2009-09-05 03:47:30.060857', "creation_date" = '2004-09-05' WHERE "id" = 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/clubs_controller.rb:30:in `update'[0m
+Redirected to http://localhost:3000/clubs-de-foot/1
+Completed in 192ms (DB: 14) | 302 Found [http://localhost/clubs-de-foot/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-05 05:47:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (7.9ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (45.2ms)
+Completed in 211ms (View: 100, DB: 9) | 200 OK [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2009-09-05 05:47:36) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"e763AOCVHBn5rWIfY7xxhJ8moAT14i84asEpfRh1Muk=", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:39:in `destroy'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;35;1mClub Destroy (1.4ms)[0m   [0mDELETE FROM "clubs" WHERE "id" = 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;36;1mSQL (9.2ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+Redirected to http://localhost:3000/clubs-de-foot
+Completed in 200ms (DB: 16) | 302 Found [http://localhost/clubs-de-foot/1]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-05 05:47:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (5.2ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 82ms (View: 26, DB: 6) | 200 OK [http://localhost/clubs-de-foot]

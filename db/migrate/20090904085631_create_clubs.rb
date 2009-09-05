@@ -5,9 +5,12 @@ class CreateClubs < ActiveRecord::Migration
       t.date :creation_date
       t.timestamps
     end
+    add_index :clubs, :name, :unique => true
   end
-  
+
   def self.down
     drop_table :clubs
+    remove_index :clubs , :name
   end
 end
+
