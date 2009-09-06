@@ -1,12 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :teams
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# The Club Module Of Sunu-ligua
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  map.resources :clubs  do |club|
+  	club.resources :teams
+  end
 
-  map.resources :clubs , :as => 'clubs-de-foot'
   map.root :clubs
-  # Install the default routes as the lowest priority.
-  # Note: These default routes make all actions in every controller accessible via GET requests. You should
-  # consider removing or commenting them out if you're using named routes and resources.
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
 end
+

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090905040458) do
+ActiveRecord::Schema.define(:version => 20090905050913) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name"
@@ -20,15 +20,20 @@ ActiveRecord::Schema.define(:version => 20090905040458) do
     t.string   "club_icon_content_type"
     t.integer  "club_icon_file_size"
     t.datetime "club_icon_updated_at"
+    t.integer  "teams_count",            :default => 0
   end
 
   add_index "clubs", ["name"], :name => "index_clubs_on_name", :unique => true
 
   create_table "teams", :force => true do |t|
     t.string   "name"
-    t.integer  "club_id",    :null => false
+    t.integer  "club_id",                :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "team_icon_file_name"
+    t.string   "team_icon_content_type"
+    t.integer  "team_icon_file_size"
+    t.datetime "team_icon_updated_at"
   end
 
 end

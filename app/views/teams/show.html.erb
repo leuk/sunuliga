@@ -6,7 +6,8 @@
 </p>
 
 <p>
-  <%= link_to "Edit", edit_team_path(@team) %> |
-  <%= link_to "Destroy", @team, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", teams_path %>
+  <%= link_to "Edit", edit_club_team_path(@club, @team) %> |
+  <%= link_to "Destroy", club_team_path(@club, @team), :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", club_teams_path(@club) %>
 </p>
+
