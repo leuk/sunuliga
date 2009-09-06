@@ -1,0 +1,2 @@
+module TeamcategoriesHelper
+end

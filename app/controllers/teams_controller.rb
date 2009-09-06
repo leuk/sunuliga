@@ -22,9 +22,9 @@ class TeamsController < ApplicationController
     @team = @club.teams.build(params[:team])
     if @team.save
       flash[:notice] = "Successfully created team."
-      redirect_to @team
+      redirect_to club_team_path(@club, @team)
     else
-      render :action => 'new'
+      redirect_to new_club_team_path(@club)
     end
   end
 

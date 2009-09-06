@@ -1,8 +1,6 @@
 <%title t('clubs.clubs_title')%>
-<%= render @clubs %>
+<%= render @clubs, :inline => true %>
 <p>
-g  <a href = "clubs-de-foot/new" title = "<%=t('clubs.new_club')%>">
-    <%=t('clubs.new_club')%>
-  </a>
+<%=link_to 'new club', new_club_path %>
 </p>
 

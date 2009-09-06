@@ -1,0 +1,8 @@
+<div id = "<%=teamcategory.id%>">
+	<%=teamcategory.name%>
+	<%=teamcategory.teams_count%>
+	<%=link_to "Show", teamcategory%>
+	<%=link_to "Edit", edit_teamcategory_path(teamcategory)%>
+	<%=link_to "Destroy", teamcategory, :confirm => 'Are you sure?', :method => :delete%>
+</div>
+

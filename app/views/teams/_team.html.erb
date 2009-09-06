@@ -1,0 +1,7 @@
+<div id = "team-g<%=team.id%>">
+      <%=h team.name %>
+      <%= link_to "Show", club_team_path(@club, team) %>
+      <%= link_to "Edit", edit_club_team_path(@club, team) %>
+      <%= link_to "Destroy", club_team_path(@club, team), :confirm => 'Are you sure?', :method => :delete %>
+</div>
+

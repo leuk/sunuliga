@@ -1,0 +1,16 @@
+<% title "Teamcategory" %>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @teamcategory.name %>
+</p>
+<p>
+  <strong>Teams Count:</strong>
+  <%=h @teamcategory.teams_count %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_teamcategory_path(@teamcategory) %> |
+  <%= link_to "Destroy", @teamcategory, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", teamcategories_path %>
+</p>

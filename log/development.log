@@ -4970,3 +4970,1767 @@ Rendering template within layouts/application
 Rendering teams/new
 Rendered teams/_form (33.1ms)
 Completed in 217ms (View: 70, DB: 4) | 200 OK [http://localhost/clubs/1/teams/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2009-09-06 04:26:33) [GET]
+  Parameters: {"club_id"=>"1", "action"=>"show", "id"=>"6", "controller"=>"teams"}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.9ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 6 AND ("teams".club_id = 1)) [0m
+    [35;2mapp/controllers/teams_controller.rb:14:in `show'[0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 205ms (View: 24, DB: 8) | 200 OK [http://localhost/clubs/1/teams/6]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#edit (for 127.0.0.1 at 2009-09-06 04:26:37) [GET]
+  Parameters: {"club_id"=>"1", "action"=>"edit", "id"=>"6", "controller"=>"teams"}
+  [4;36;1mClub Load (4.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.7ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 6 AND ("teams".club_id = 1)) [0m
+    [35;2mapp/controllers/teams_controller.rb:32:in `edit'[0m
+Rendering template within layouts/application
+Rendering teams/edit
+Rendered teams/_form (22.9ms)
+Completed in 148ms (View: 31, DB: 8) | 200 OK [http://localhost/clubs/1/teams/6/edit]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#update (for 127.0.0.1 at 2009-09-06 04:26:40) [PUT]
+  Parameters: {"commit"=>"Submit", "club_id"=>"1", "action"=>"update", "_method"=>"put", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"6", "controller"=>"teams", "team"=>{"name"=>"espoirs et equipe C"}}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (12.3ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 6 AND ("teams".club_id = 1)) [0m
+    [35;2mapp/controllers/teams_controller.rb:36:in `update'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:37:in `update'[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:37:in `update'[0m
+Redirected to http://localhost:3000/clubs/1/teams/6
+Completed in 256ms (DB: 18) | 302 Found [http://localhost/clubs/1/teams/6]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2009-09-06 04:26:40) [GET]
+  Parameters: {"club_id"=>"1", "action"=>"show", "id"=>"6", "controller"=>"teams"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 6 AND ("teams".club_id = 1)) [0m
+    [35;2mapp/controllers/teams_controller.rb:14:in `show'[0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 163ms (View: 30, DB: 7) | 200 OK [http://localhost/clubs/1/teams/6]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:27:04) [DELETE]
+  Parameters: {"club_id"=>"1", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"6", "controller"=>"teams"}
+  [4;36;1mClub Load (3.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 6 AND ("teams".club_id = 1)) [0m
+    [35;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mClub Update (84.2ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;35;1mTeam Destroy (1.9ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 6[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mSQL (54.7ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/1/teams
+Completed in 866ms (DB: 149) | 302 Found [http://localhost/clubs/1/teams/6]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:27:05) [GET]
+  Parameters: {"club_id"=>"1", "action"=>"index", "controller"=>"teams"}
+  [4;35;1mClub Load (7.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (2.8ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams".club_id = 1) [0m
+    [36;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (24.7ms)
+Rendered teams/_team (4.3ms)
+Completed in 152ms (View: 39, DB: 11) | 200 OK [http://localhost/clubs/1/teams]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-06 04:27:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"clubs"}
+  [4;35;1mClub Load (7.8ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (62.3ms)
+Completed in 484ms (View: 367, DB: 9) | 200 OK [http://localhost/clubs/1]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2009-09-06 04:27:35) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:39:in `destroy'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/1/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mClub Destroy (0.0ms)[0m   [0;1mPGError: ERROR: update or delete on table "clubs" violates foreign key constraint "teams_clubs_fkey" on table "teams"
+DETAIL: Key (id)=(1) is still referenced from table "teams".
+: DELETE FROM "clubs" WHERE "id" = 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+
+ActiveRecord::StatementInvalid (PGError: ERROR:  update or delete on table "clubs" violates foreign key constraint "teams_clubs_fkey" on table "teams"
+DETAIL:  Key (id)=(1) is still referenced from table "teams".
+: DELETE FROM "clubs" WHERE "id" = 1):
+  app/controllers/clubs_controller.rb:40:in `destroy'
+
+Rendered rescues/_trace (275.5ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#destroy (for 127.0.0.1 at 2009-09-06 04:35:46) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"1", "controller"=>"clubs"}
+  [4;36;1mClub Load (7.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:39:in `destroy'[0m
+  [4;35;1mSQL (10.8ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;36;1mTeam Load (4.0ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams".club_id = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;36;1mClub Update (6.6ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;35;1mTeam Destroy (25.8ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 4[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;36;1mClub Load (10.2ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 1) [0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;35;1mClub Update (8.9ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 1) [0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;36;1mTeam Destroy (1.3ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 5[0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;35;1mClub Destroy (29.1ms)[0m   [0mDELETE FROM "clubs" WHERE "id" = 1[0m
+    [35;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+  [4;36;1mSQL (4.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/clubs_controller.rb:40:in `destroy'[0m
+Redirected to http://localhost:3000/clubs
+Completed in 1336ms (DB: 109) | 302 Found [http://localhost/clubs/1]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-06 04:35:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;35;1mClub Load (12.4ms)[0m   [0mSELECT * FROM "clubs" [0m
+    [35;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 163ms (View: 68, DB: 14) | 200 OK [http://localhost/clubs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-09-06 04:36:31) [GET]
+
+ActionController::RoutingError (No route matches "/clubs-de-foot/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#index (for 127.0.0.1 at 2009-09-06 04:38:18) [GET]
+  Parameters: {"action"=>"index", "controller"=>"clubs"}
+  [4;36;1mClub Load (5.2ms)[0m   [0;1mSELECT * FROM "clubs" [0m
+    [36;2mapp/controllers/clubs_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering clubs/index
+Completed in 670ms (View: 76, DB: 6) | 200 OK [http://localhost/clubs]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#new (for 127.0.0.1 at 2009-09-06 04:38:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"clubs"}
+Rendering template within layouts/application
+Rendering clubs/new
+Rendered clubs/_form (1171.2ms)
+Completed in 1328ms (View: 1255, DB: 1) | 200 OK [http://localhost/clubs/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (4.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#create (for 127.0.0.1 at 2009-09-06 04:38:59) [POST]
+  Parameters: {"club"=>{"name"=>"Jaraaf de dakar", "creation_date(1i)"=>"2012", "creation_date(2i)"=>"9", "creation_date(3i)"=>"6", "club_icon"=>#<File:/tmp/RackMultipart20090906-8407-g4tz0r-0>}, "commit"=>"<span class=\"translation_missing\">en, save_button</span>", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"clubs"}
+  [4;35;1mSQL (0.7ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;36;1mClub Load (151.7ms)[0m   [0;1mSELECT "clubs".id FROM "clubs" WHERE ("clubs"."name" = E'Jaraaf de dakar') LIMIT 1[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (196.3ms)[0m   [0mINSERT INTO "clubs" ("name", "club_icon_updated_at", "created_at", "creation_date", "updated_at", "club_icon_file_size", "club_icon_file_name", "club_icon_content_type", "teams_count") VALUES(E'Jaraaf de dakar', '2009-09-06 02:38:59.587220', '2009-09-06 02:39:04.411650', '2012-09-06', '2009-09-06 02:39:04.411650', 12049, E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', E'image/jpeg', 0) RETURNING "id"[0m
+    [35;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/2/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/2/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/club_icons/2/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/clubs_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/clubs/2
+Completed in 5530ms (DB: 359) | 302 Found [http://localhost/clubs]
+  [4;35;1mSQL (2.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-06 04:39:05) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (51.7ms)
+Completed in 165ms (View: 77, DB: 9) | 200 OK [http://localhost/clubs/2]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:39:16) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (13.8ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (14.1ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Completed in 220ms (View: 8, DB: 29) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2009-09-06 04:40:43) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"new", "controller"=>"teams"}
+  [4;36;1mClub Load (14.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (64.0ms)
+Completed in 274ms (View: 105, DB: 16) | 200 OK [http://localhost/clubs/2/teams/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:41:07) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-svo23d-0>}}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+WARNING: Can't mass-assign these protected attributes: team_icon
+  [4;36;1mSQL (0.8ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mSQL (33.9ms)[0m   [0mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:41:08.188159', NULL, NULL, '2009-09-06 02:41:08.188159', 2, NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Load (1.7ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Update (2.0ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb66a07a0>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (474.6ms)
+Rendered rescues/_request_and_response (7.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:42:19) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-h661r5-0>}}
+  [4;35;1mClub Load (11.8ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+WARNING: Can't mass-assign these protected attributes: team_icon
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:42:20.006055', NULL, NULL, '2009-09-06 02:42:20.006055', 2, NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Load (1.7ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Update (1.9ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb657c16c>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (252.2ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:42:29) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-1n3w19r-0>}}
+  [4;35;1mClub Load (3.5ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+WARNING: Can't mass-assign these protected attributes: team_icon
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:42:29.907799', NULL, NULL, '2009-09-06 02:42:29.907799', 2, NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Load (9.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Update (2.3ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb65a6bd8>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (262.7ms)
+Rendered rescues/_request_and_response (2.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (3.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:43:24) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-us2khi-0>}}
+  [4;35;1mClub Load (15.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+WARNING: Can't mass-assign these protected attributes: team_icon
+  [4;36;1mSQL (3.9ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mSQL (22.2ms)[0m   [0mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:43:25.236792', NULL, NULL, '2009-09-06 02:43:25.236792', 2, NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Load (1.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Update (1.9ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb65bd590>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (616.3ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:44:05) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-1694y5u-0>}}
+  [4;35;1mClub Load (3.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', '2009-09-06 02:44:05.292257', '2009-09-06 02:44:08.045326', E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', 12049, '2009-09-06 02:44:08.045326', 2, E'image/jpeg') RETURNING "id"[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Load (1.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Update (1.9ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mSQL (3.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb65cc5e0>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (255.9ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2009-09-06 04:46:10) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"new", "controller"=>"teams"}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (27.3ms)
+Completed in 169ms (View: 36, DB: 4) | 200 OK [http://localhost/clubs/2/teams/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:46:23) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors"}}
+  [4;36;1mClub Load (16.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:46:24.444272', NULL, NULL, '2009-09-06 02:46:24.444272', 2, NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Load (1.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Update (2.0ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (11.0ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+
+NoMethodError (undefined method `team_url' for #<TeamsController:0xb6557b28>):
+  app/controllers/teams_controller.rb:25:in `create'
+
+Rendered rescues/_trace (258.0ms)
+Rendered rescues/_request_and_response (10.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:47:14) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Juniors"}}
+  [4;36;1mClub Load (6.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mSQL (9.9ms)[0m   [0;1mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Juniors', NULL, '2009-09-06 02:47:14.863932', NULL, NULL, '2009-09-06 02:47:14.863932', 2, NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Load (4.3ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Update (16.8ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (4.2ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+Redirected to http://localhost:3000/clubs/2/teams/13
+Completed in 894ms (DB: 48) | 302 Found [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2009-09-06 04:47:15) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"show", "id"=>"13", "controller"=>"teams"}
+  [4;36;1mClub Load (3.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 13 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:14:in `show'[0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 172ms (View: 29, DB: 7) | 200 OK [http://localhost/clubs/2/teams/13]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:19) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.1ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (46.8ms)
+Rendered teams/_team (19.3ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (4.0ms)
+Rendered teams/_team (21.4ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (4.0ms)
+Completed in 361ms (View: 154, DB: 8) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:47:24) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"8", "controller"=>"teams"}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.0ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 8 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mClub Update (2.3ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;35;1mTeam Destroy (1.6ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 8[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mSQL (12.9ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 799ms (DB: 25) | 302 Found [http://localhost/clubs/2/teams/8]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:25) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;35;1mClub Load (3.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (11.3ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (34.7ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (12.7ms)
+Rendered teams/_team (4.0ms)
+Rendered teams/_team (3.9ms)
+Rendered teams/_team (4.0ms)
+Completed in 228ms (View: 82, DB: 16) | 200 OK [http://localhost/clubs/2/teams]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:47:29) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"13", "controller"=>"teams"}
+  [4;35;1mClub Load (11.4ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (2.8ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 13 AND ("teams".club_id = 2)) [0m
+    [36;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mClub Update (2.3ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;36;1mTeam Destroy (1.3ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 13[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mSQL (2.8ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 670ms (DB: 22) | 302 Found [http://localhost/clubs/2/teams/13]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:30) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (11.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (29.3ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (12.8ms)
+Rendered teams/_team (4.1ms)
+Completed in 193ms (View: 69, DB: 16) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:47:34) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"12", "controller"=>"teams"}
+  [4;36;1mClub Load (6.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (6.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 12 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mClub Update (2.2ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;35;1mTeam Destroy (1.3ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 12[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 701ms (DB: 25) | 302 Found [http://localhost/clubs/2/teams/12]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:35) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;35;1mClub Load (3.5ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (2.8ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (30.3ms)
+Rendered teams/_team (4.1ms)
+Rendered teams/_team (4.0ms)
+Rendered teams/_team (12.0ms)
+Completed in 195ms (View: 63, DB: 7) | 200 OK [http://localhost/clubs/2/teams]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:47:53) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"11", "controller"=>"teams"}
+  [4;35;1mClub Load (18.2ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (2.9ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 11 AND ("teams".club_id = 2)) [0m
+    [36;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mClub Update (2.2ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] deleting /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/11/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;36;1mTeam Destroy (1.3ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 11[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 702ms (DB: 29) | 302 Found [http://localhost/clubs/2/teams/11]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:54) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (30.0ms)
+Rendered teams/_team (4.0ms)
+Rendered teams/_team (4.1ms)
+Completed in 172ms (View: 50, DB: 8) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:47:58) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"10", "controller"=>"teams"}
+  [4;36;1mClub Load (14.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (10.5ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 10 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mClub Update (8.9ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;35;1mTeam Destroy (1.3ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 10[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 697ms (DB: 45) | 302 Found [http://localhost/clubs/2/teams/10]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:47:59) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;35;1mClub Load (3.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (2.7ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (21.6ms)
+Rendered teams/_team (12.4ms)
+Completed in 180ms (View: 54, DB: 7) | 200 OK [http://localhost/clubs/2/teams]
+  [4;35;1mSQL (1.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#destroy (for 127.0.0.1 at 2009-09-06 04:48:04) [DELETE]
+  Parameters: {"club_id"=>"2", "action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "id"=>"9", "controller"=>"teams"}
+  [4;35;1mClub Load (3.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mTeam Load (10.6ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 9 AND ("teams".club_id = 2)) [0m
+    [36;2mapp/controllers/teams_controller.rb:46:in `destroy'[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mClub Update (2.3ms)[0m   [0mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) - 1 WHERE ("id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+[paperclip] Deleting attachments.
+  [4;36;1mTeam Destroy (1.3ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 9[0m
+    [36;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:47:in `destroy'[0m
+Redirected to http://localhost:3000/clubs/2/teams
+Completed in 322ms (DB: 35) | 302 Found [http://localhost/clubs/2/teams/9]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:48:04) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (22.4ms)
+Completed in 167ms (View: 40, DB: 7) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2009-09-06 04:51:13) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"new", "controller"=>"teams"}
+  [4;36;1mClub Load (3.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (27.9ms)
+Completed in 163ms (View: 36, DB: 4) | 200 OK [http://localhost/clubs/2/teams/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 04:51:35) [POST]
+  Parameters: {"commit"=>"Submit", "club_id"=>"2", "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Espoirs et Equipe A", "team_icon"=>#<File:/tmp/RackMultipart20090906-8407-88opoc-0>}}
+  [4;35;1mClub Load (6.1ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mTeam Load (14.0ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = E'Espoirs et Equipe A') LIMIT 1[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mSQL (4.5ms)[0m   [0;1mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Espoirs et Equipe A', '2009-09-06 02:51:36.045592', '2009-09-06 02:51:39.386367', E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', 12049, '2009-09-06 02:51:39.386367', 2, E'image/jpeg') RETURNING "id"[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Load (1.6ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Update (2.0ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/14/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/14/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/14/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;35;1mSQL (2.3ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+Redirected to http://localhost:3000/clubs/2/teams/14
+Completed in 3795ms (DB: 33) | 302 Found [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (11.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2009-09-06 04:51:39) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"show", "id"=>"14", "controller"=>"teams"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (11.7ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 14 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:14:in `show'[0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 175ms (View: 30, DB: 27) | 200 OK [http://localhost/clubs/2/teams/14]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 04:52:36) [GET]
+  Parameters: {"club_id"=>"2", "action"=>"index", "controller"=>"teams"}
+  [4;36;1mClub Load (11.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (21.0ms)
+Rendered teams/_team (15.5ms)
+Completed in 180ms (View: 55, DB: 15) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (13.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-06 06:07:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"clubs"}
+  [4;36;1mClub Load (55.7ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (580.4ms)
+Completed in 2346ms (View: 1597, DB: 70) | 200 OK [http://localhost/clubs/2]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing ClubsController#show (for 127.0.0.1 at 2009-09-06 06:08:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"clubs"}
+  [4;35;1mClub Load (3.5ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/clubs_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering clubs/show
+Rendered clubs/_club (44.3ms)
+Completed in 163ms (View: 74, DB: 5) | 200 OK [http://localhost/clubs/2]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#new (for 127.0.0.1 at 2009-09-06 06:08:54) [GET]
+  Parameters: {"action"=>"new", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (11.9ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+Rendering template within layouts/application
+Rendering teams/new
+Rendered teams/_form (62.9ms)
+Completed in 460ms (View: 233, DB: 13) | 200 OK [http://localhost/clubs/2/teams/new]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#create (for 127.0.0.1 at 2009-09-06 06:09:20) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "club_id"=>"2", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teams", "team"=>{"name"=>"Asc Niarry Tally", "team_icon"=>#<File:/tmp/RackMultipart20090906-10087-1ltq2hf-0>}}
+  [4;35;1mClub Load (11.8ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;36;1mSQL (121.1ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mTeam Load (64.4ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = E'Asc Niarry Tally') LIMIT 1[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mSQL (274.9ms)[0m   [0;1mINSERT INTO "teams" ("name", "team_icon_updated_at", "created_at", "team_icon_file_name", "team_icon_file_size", "updated_at", "club_id", "team_icon_content_type") VALUES(E'Asc Niarry Tally', '2009-09-06 04:09:20.692859', '2009-09-06 04:09:27.534144', E'Papier_peint_de_la_Galerie_de_photos_Windows.jpg', 12049, '2009-09-06 04:09:27.534144', 2, E'image/jpeg') RETURNING "id"[0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;35;1mClub Load (1.5ms)[0m   [0mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+  [4;36;1mClub Update (3.8ms)[0m   [0;1mUPDATE "clubs" SET "teams_count" = COALESCE("teams_count", 0) + 1 WHERE ("id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+[paperclip] Saving attachments.
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/15/original/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/15/thumb/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+[paperclip] saving /home/leukify/Bureau/.projects/sunuliga/clubs/public/system/team_icons/15/small/Papier_peint_de_la_Galerie_de_photos_Windows.jpg
+  [4;35;1mSQL (110.2ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teams_controller.rb:23:in `create'[0m
+Redirected to http://localhost:3000/clubs/2/teams/15
+Completed in 8513ms (DB: 589) | 302 Found [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#show (for 127.0.0.1 at 2009-09-06 06:09:29) [GET]
+  Parameters: {"action"=>"show", "club_id"=>"2", "id"=>"15", "controller"=>"teams"}
+  [4;36;1mClub Load (3.6ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 15 AND ("teams".club_id = 2)) [0m
+    [35;2mapp/controllers/teams_controller.rb:14:in `show'[0m
+Rendering template within layouts/application
+Rendering teams/show
+Completed in 247ms (View: 95, DB: 8) | 200 OK [http://localhost/clubs/2/teams/15]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (13.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:09:39) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (8.1ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (2.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (36.9ms)
+Rendered teams/_team (5.6ms)
+Rendered teams/_team (4.1ms)
+Completed in 359ms (View: 141, DB: 25) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:10:22) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (3.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.9ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (21.6ms)
+Rendered teams/_team (13.7ms)
+Rendered teams/_team (4.6ms)
+Completed in 205ms (View: 62, DB: 8) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:10:29) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (8.3ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.7ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (32.2ms)
+Rendered teams/_team (4.9ms)
+Rendered teams/_team (12.6ms)
+Completed in 621ms (View: 62, DB: 13) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:11:04) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (3.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.6ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (37.6ms)
+Rendered teams/_team (4.2ms)
+Rendered teams/_team (4.7ms)
+Completed in 214ms (View: 70, DB: 8) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:11:18) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (8.4ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (11.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (39.4ms)
+Rendered teams/_team (19.8ms)
+Rendered teams/_team (4.0ms)
+Completed in 319ms (View: 104, DB: 21) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamsController#index (for 127.0.0.1 at 2009-09-06 06:11:41) [GET]
+  Parameters: {"action"=>"index", "club_id"=>"2", "controller"=>"teams"}
+  [4;36;1mClub Load (3.5ms)[0m   [0;1mSELECT * FROM "clubs" WHERE ("clubs"."id" = 2) [0m
+    [36;2mapp/controllers/teams_controller.rb:55:in `load_club'[0m
+  [4;35;1mTeam Load (3.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams".club_id = 2) [0m
+    [35;2mapp/controllers/teams_controller.rb:10:in `index'[0m
+Rendering template within layouts/application
+Rendering teams/index
+Rendered teams/_team (32.1ms)
+Rendered teams/_team (4.3ms)
+Rendered teams/_team (4.3ms)
+Completed in 679ms (View: 53, DB: 8) | 200 OK [http://localhost/clubs/2/teams]
+  [4;36;1mSQL (13.8ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (33.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+Migrating to AddTeamsCountToClubs (20090905045934)
+Migrating to AddAttachmentsTeamIconToTeams (20090905050913)
+Migrating to CreateTeamcategories (20090906042512)
+  [4;35;1mSQL (1.6ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (13534.6ms)[0m   [0;1mCREATE TABLE "teamcategories" ("id" serial primary key, "name" character varying(255), "teams_count" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (3.0ms)[0m   [0mALTER TABLE "teams" ADD COLUMN "teamcategory_id" integer[0m
+
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: column "teamcategory_id" contains null values
+: ALTER TABLE "teams" ALTER "teamcategory_id" SET NOT NULL[0m
+
+  [4;35;1mSQL (2.1ms)[0m   [0mROLLBACK[0m
+
+  [4;36;1mSQL (13.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mTeam Delete all (431.6ms)[0m   [0;1mDELETE FROM "teams" [0m
+
+  [4;35;1mTeam Load (1.5ms)[0m   [0mSELECT * FROM "teams" [0m
+
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+Migrating to AddTeamsCountToClubs (20090905045934)
+Migrating to AddAttachmentsTeamIconToTeams (20090905050913)
+Migrating to CreateTeamcategories (20090906042512)
+  [4;35;1mSQL (1.2ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (755.3ms)[0m   [0;1mCREATE TABLE "teamcategories" ("id" serial primary key, "name" character varying(255), "teams_count" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (4.1ms)[0m   [0mALTER TABLE "teams" ADD COLUMN "teamcategory_id" integer[0m
+
+  [4;36;1mSQL (2.2ms)[0m   [0;1mALTER TABLE "teams" ALTER "teamcategory_id" SET NOT NULL[0m
+
+  [4;35;1mSQL (436.0ms)[0m   [0mALTER TABLE teams ADD CONSTRAINT teams_teamcategories_fkey FOREIGN KEY (teamcategory_id) REFERENCES teamcategories (id);[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:111:in `add_foreign_key'[0m
+  [4;36;1mSQL (52.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090906042512')[0m
+
+  [4;35;1mSQL (3.6ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (3.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;35;1mSQL (452.3ms)[0m   [0mALTER TABLE teams DROP CONSTRAINT teams_teamcategories_fkey;[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:115:in `remove_foreign_key'[0m
+  [4;36;1mSQL (103.5ms)[0m   [0;1mALTER TABLE "teams" DROP "teamcategory_id"[0m
+
+  [4;35;1mSQL (1196.0ms)[0m   [0mDROP TABLE "teamcategories"[0m
+
+  [4;36;1mSQL (7.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20090906042512'[0m
+
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+Migrating to CreateClubs (20090904085631)
+Migrating to AddAttachmentsClubIconToClubs (20090904143832)
+Migrating to CreateTeams (20090905040458)
+Migrating to AddTeamsCountToClubs (20090905045934)
+Migrating to AddAttachmentsTeamIconToTeams (20090905050913)
+Migrating to CreateTeamcategories (20090906042512)
+  [4;35;1mSQL (1.1ms)[0m   [0mBEGIN[0m
+
+  [4;36;1mSQL (148.1ms)[0m   [0;1mCREATE TABLE "teamcategories" ("id" serial primary key, "name" character varying(255), "teams_count" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+
+  [4;35;1mSQL (2.8ms)[0m   [0mALTER TABLE "teams" ADD COLUMN "teamcategory_id" integer[0m
+
+  [4;36;1mSQL (2.2ms)[0m   [0;1mALTER TABLE "teams" ALTER "teamcategory_id" SET NOT NULL[0m
+
+  [4;35;1mSQL (17.8ms)[0m   [0mALTER TABLE teams ADD CONSTRAINT teams_teamcategories_fkey FOREIGN KEY (teamcategory_id) REFERENCES teamcategories (id);[0m
+    [35;2mvendor/plugins/migration_helpers/lib/migration_helpers.rb:111:in `add_foreign_key'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090906042512')[0m
+
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+
+  [4;36;1mSQL (21.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:37:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (288.2ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 2100ms (View: 1000, DB: 310) | 200 OK [http://localhost/teamcategories]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:37:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (234.9ms)
+Completed in 834ms (View: 430, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:38:01) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"juniors"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;35;1mSQL (80.6ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (539.3ms)[0m   [0;1mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'juniors', '2009-09-06 05:38:01.578451', '2009-09-06 05:38:01.578451', NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (66.4ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/1
+Completed in 1346ms (DB: 688) | 302 Found [http://localhost/teamcategories]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:38:03) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (13.7ms)[0m   [0;1mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 1) [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 232ms (View: 44, DB: 15) | 200 OK [http://localhost/teamcategories/1]
+  [4;35;1mSQL (3.4ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:38:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (5.3ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 75ms (View: 35, DB: 9) | 200 OK [http://localhost/teamcategories]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:38:09) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (31.6ms)
+Completed in 130ms (View: 57, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:38:18) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"seniors"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (2.7ms)[0m   [0mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'seniors', '2009-09-06 05:38:18.183342', '2009-09-06 05:38:18.183342', NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (9.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/2
+Completed in 124ms (DB: 14) | 302 Found [http://localhost/teamcategories]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:38:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (3.2ms)[0m   [0mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 2) [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 75ms (View: 17, DB: 4) | 200 OK [http://localhost/teamcategories/2]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:38:20) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (4.8ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 149ms (View: 77, DB: 6) | 200 OK [http://localhost/teamcategories]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:38:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (32.8ms)
+Completed in 106ms (View: 51, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:38:30) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"cadets"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'cadets', '2009-09-06 05:38:30.966323', '2009-09-06 05:38:30.966323', NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/3
+Completed in 172ms (DB: 10) | 302 Found [http://localhost/teamcategories]
+  [4;36;1mSQL (10.9ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:38:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (3.2ms)[0m   [0;1mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 3) [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 83ms (View: 18, DB: 15) | 200 OK [http://localhost/teamcategories/3]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:38:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (11.3ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 170ms (View: 107, DB: 12) | 200 OK [http://localhost/teamcategories]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:38:35) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (18.9ms)
+Completed in 79ms (View: 30, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:38:43) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"minimes"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (7.8ms)[0m   [0mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'minimes', '2009-09-06 05:38:43.415137', '2009-09-06 05:38:43.415137', NULL) RETURNING "id"[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mCOMMIT[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/4
+Completed in 188ms (DB: 18) | 302 Found [http://localhost/teamcategories]
+  [4;35;1mSQL (3.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:38:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (2.8ms)[0m   [0mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 4) [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 83ms (View: 21, DB: 7) | 200 OK [http://localhost/teamcategories/4]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:38:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (8.6ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 161ms (View: 87, DB: 10) | 200 OK [http://localhost/teamcategories]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:38:48) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (23.3ms)
+Completed in 447ms (View: 53, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;35;1mSQL (0.8ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:38:56) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"espoirs"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;35;1mSQL (0.6ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'espoirs', '2009-09-06 05:38:56.762169', '2009-09-06 05:38:56.762169', NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/5
+Completed in 160ms (DB: 8) | 302 Found [http://localhost/teamcategories]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:38:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (4.4ms)[0m   [0;1mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 5) [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 125ms (View: 33, DB: 7) | 200 OK [http://localhost/teamcategories/5]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:38:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (11.7ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 176ms (View: 111, DB: 13) | 200 OK [http://localhost/teamcategories]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:42:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (5.4ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teams unless @teams.empty? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (265.3ms)
+Rendered rescues/_request_and_response (120.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:42:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (4.8ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Completed in 78ms (View: 29, DB: 6) | 200 OK [http://localhost/teamcategories]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:43:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (5.1ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (Missing template teamcategories/_teamcategory.erb in view path app/views) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teamcategories unless @teamcategories.nil? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (290.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:44:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (4.8ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (Missing template teamcategories/_teamcategory.erb in view path app/views) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teamcategories unless @teamcategories.nil? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (935.5ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:44:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (8.5ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (Missing template teamcategories/_teamcategory.erb in view path app/views) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teamcategories unless @teamcategories.nil? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (281.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:45:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (8.0ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (Missing template teamcategories/_teamcategory.erb in view path app/views) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teamcategories unless @teamcategories.nil? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (493.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:45:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (4.9ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+
+ActionView::TemplateError (Missing template teamcategories/_teamcategory.erb in view path app/views) on line #3 of app/views/teamcategories/index.html.erb:
+1: <% title "Teamcategories" %>
+2: 
+3: <%= render @teamcategories unless @teamcategories.nil? %>
+4: <p><%= link_to "New Teamcategory", new_teamcategory_path %></p>
+
+    app/views/teamcategories/index.html.erb:3
+
+Rendered rescues/_trace (871.7ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:45:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (4.9ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Rendered teamcategories/_teamcategory (80.1ms)
+Rendered teamcategories/_teamcategory (15.5ms)
+Rendered teamcategories/_teamcategory (5.1ms)
+Rendered teamcategories/_teamcategory (5.5ms)
+Rendered teamcategories/_teamcategory (10.6ms)
+Completed in 212ms (View: 171, DB: 6) | 200 OK [http://localhost/teamcategories]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:47:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (8.7ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Rendered teamcategories/_teamcategory (58.0ms)
+Rendered teamcategories/_teamcategory (5.2ms)
+Rendered teamcategories/_teamcategory (17.0ms)
+Rendered teamcategories/_teamcategory (9.8ms)
+Rendered teamcategories/_teamcategory (9.1ms)
+Completed in 226ms (View: 144, DB: 10) | 200 OK [http://localhost/teamcategories]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:48:02) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (2.9ms)[0m   [0mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 1) [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 79ms (View: 20, DB: 4) | 200 OK [http://localhost/teamcategories/1]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (0.4ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:48:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (5.3ms)[0m   [0;1mSELECT * FROM "teamcategories" [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Rendered teamcategories/_teamcategory (35.4ms)
+Rendered teamcategories/_teamcategory (5.7ms)
+Rendered teamcategories/_teamcategory (8.9ms)
+Rendered teamcategories/_teamcategory (5.9ms)
+Rendered teamcategories/_teamcategory (5.2ms)
+Completed in 149ms (View: 96, DB: 6) | 200 OK [http://localhost/teamcategories]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#new (for 127.0.0.1 at 2009-09-06 07:49:38) [GET]
+  Parameters: {"action"=>"new", "controller"=>"teamcategories"}
+Rendering template within layouts/application
+Rendering teamcategories/new
+Rendered teamcategories/_form (16.1ms)
+Completed in 76ms (View: 24, DB: 1) | 200 OK [http://localhost/teamcategories/new]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#create (for 127.0.0.1 at 2009-09-06 07:49:45) [POST]
+  Parameters: {"commit"=>"Submit", "teamcategory"=>{"name"=>"veterans"}, "action"=>"create", "authenticity_token"=>"vL2bSdDxzzwlB/Hk1XTIr4TK8U+51vlb4+F0rFxh1SU=", "controller"=>"teamcategories"}
+  [4;35;1mSQL (4.9ms)[0m   [0mBEGIN[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;36;1mSQL (9.8ms)[0m   [0;1mINSERT INTO "teamcategories" ("name", "created_at", "updated_at", "teams_count") VALUES(E'veterans', '2009-09-06 05:49:45.144472', '2009-09-06 05:49:45.144472', NULL) RETURNING "id"[0m
+    [36;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+  [4;35;1mSQL (7.4ms)[0m   [0mCOMMIT[0m
+    [35;2mapp/controllers/teamcategories_controller.rb:16:in `create'[0m
+Redirected to http://localhost:3000/teamcategories/6
+Completed in 174ms (DB: 23) | 302 Found [http://localhost/teamcategories]
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+
+  [4;35;1mSQL (1.8ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#show (for 127.0.0.1 at 2009-09-06 07:49:45) [GET]
+  Parameters: {"action"=>"show", "id"=>"6", "controller"=>"teamcategories"}
+  [4;36;1mTeamcategory Load (7.0ms)[0m   [0;1mSELECT * FROM "teamcategories" WHERE ("teamcategories"."id" = 6) [0m
+    [36;2mapp/controllers/teamcategories_controller.rb:7:in `show'[0m
+Rendering template within layouts/application
+Rendering teamcategories/show
+Completed in 128ms (View: 32, DB: 11) | 200 OK [http://localhost/teamcategories/6]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+
+Processing TeamcategoriesController#index (for 127.0.0.1 at 2009-09-06 07:49:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"teamcategories"}
+  [4;35;1mTeamcategory Load (5.0ms)[0m   [0mSELECT * FROM "teamcategories" [0m
+    [35;2mapp/controllers/teamcategories_controller.rb:3:in `index'[0m
+Rendering template within layouts/application
+Rendering teamcategories/index
+Rendered teamcategories/_teamcategory (42.6ms)
+Rendered teamcategories/_teamcategory (9.1ms)
+Rendered teamcategories/_teamcategory (9.3ms)
+Rendered teamcategories/_teamcategory (14.4ms)
+Rendered teamcategories/_teamcategory (5.1ms)
+Rendered teamcategories/_teamcategory (9.4ms)
+Completed in 194ms (View: 126, DB: 6) | 200 OK [http://localhost/teamcategories]
