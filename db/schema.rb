@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090906042512) do
+ActiveRecord::Schema.define(:version => 20090907010146) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(:version => 20090906042512) do
   end
 
   add_index "clubs", ["name"], :name => "index_clubs_on_name", :unique => true
+
+  create_table "players", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.date     "birthdate"
+    t.integer  "position_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "player_icon_file_name"
+    t.string   "player_icon_content_type"
+    t.integer  "player_icon_file_size"
+    t.datetime "player_icon_updated_at"
+  end
 
   create_table "teamcategories", :force => true do |t|
     t.string   "name"

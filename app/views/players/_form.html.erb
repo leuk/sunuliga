@@ -1,0 +1,16 @@
+<% form_for @players do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname %>
+  </p>
+  <p>
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :birthdate %><br />
+    <%= f.date_select :birthdate %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
