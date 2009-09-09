@@ -3,5 +3,6 @@
       <%= link_to "Show", club_team_path(@club, team) %>
       <%= link_to "Edit", edit_club_team_path(@club, team) %>
       <%= link_to "Destroy", club_team_path(@club, team), :confirm => 'Are you sure?', :method => :delete %>
+			<%= link_to 'Team Players', club_team_team_players_path(@club, team)%>
 </div>
 

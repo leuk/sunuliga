@@ -1,5 +1,9 @@
-<% form_for @players do |f| %>
+<% form_for @player, :html => {:multipart => true} do |f| %>
   <%= f.error_messages %>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.collection_select :position_id, @positions, :id, :name %>
+  </p>
   <p>
     <%= f.label :firstname %><br />
     <%= f.text_field :firstname %>
@@ -12,5 +16,10 @@
     <%= f.label :birthdate %><br />
     <%= f.date_select :birthdate %>
   </p>
+  <p>
+    <%= f.label :player_icon %><br />
+    <%= f.file_field :player_icon %>
+  </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>
+

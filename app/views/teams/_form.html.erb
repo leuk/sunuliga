@@ -1,6 +1,10 @@
 <% form_for [@club, @team] , :html => {:multipart => true} do |f| %>
   <%= f.error_messages %>
   <p>
+    <%= f.label :teamcategory_id %><br />
+    <%= f.collection_select :teamcategory_id, @categories, :id, :name %>
+  </p>
+  <p>
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>

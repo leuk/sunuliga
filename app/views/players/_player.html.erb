@@ -1,0 +1,9 @@
+<div id = "player-<%=player.id%>" >
+	<%=h player.name %>
+	<%=image_tag player.player_icon.url(:small), :title => player.name, :alt => player.firstname%>
+	<%=h player.birthdate %>
+	<%= link_to "Show", player %>
+	<%= link_to "Edit", edit_player_path(player) %>
+	<%= link_to "Destroy", player, :confirm => 'Are you sure?', :method => :delete %>
+</div>
+

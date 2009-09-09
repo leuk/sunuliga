@@ -1,0 +1,25 @@
+<% form_for [@club, @team, @team_player] , :html => {:multipart => true}do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :tp_icon %><br />
+    <%= f.file_field :tp_icon %>
+  </p>
+  <p>
+    <%= f.label :position_id %><br />
+    <%= f.collection_select :position_id, @positions, :id, :name %>
+  </p>
+  <p>
+    <%= f.label :alias %><br />
+    <%= f.text_field :alias %>
+  </p>
+  <p>
+    <%= f.label :number %><br />
+    <%= f.text_field :number %>
+  </p>
+  <p>
+    <%= f.label :hiredate %><br />
+    <%= f.date_select :hiredate %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
+

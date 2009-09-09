@@ -3,8 +3,9 @@ class TeamsController < ApplicationController
 # Filters Applied To Self
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	before_filter :load_club
+	before_filter :load_categories, :only => [:new, :edit]
 
-# End Filters Applied To Self
+# Self's public methods
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   def index
     @teams = @club.teams.all
@@ -24,6 +25,7 @@ class TeamsController < ApplicationController
       flash[:notice] = "Successfully created team."
       redirect_to club_team_path(@club, @team)
     else
+    	load_categories
       redirect_to new_club_team_path(@club)
     end
   end
@@ -38,6 +40,7 @@ class TeamsController < ApplicationController
       flash[:notice] = "Successfully updated team."
       redirect_to club_team_path(@club, @team)
     else
+    	load_categories
       render edit_club_team_path(@club, @team)
     end
   end
@@ -48,11 +51,15 @@ class TeamsController < ApplicationController
     flash[:notice] = "Successfully destroyed team."
     redirect_to club_teams_path(@club)
   end
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 # Private Area
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	def load_club
 		@club = Club.find(params[:club_id])
+	end
+	def load_categories
+		@categories = Teamcategory.all
 	end
 end
 

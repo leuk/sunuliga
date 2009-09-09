@@ -7,7 +7,7 @@ class Teamcategory < ActiveRecord::Base
 # Self's Associations
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   has_many :teams, :dependent => :destroy
-  has_many :clubs :through => :teams
+  has_many :clubs, :through => :teams
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Self's Validations
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
