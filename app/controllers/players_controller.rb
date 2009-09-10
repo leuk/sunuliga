@@ -53,8 +53,6 @@ class PlayersController < ApplicationController
 
 #Private Area
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	def load_positions
-		@positions = Position.all
-	end
+
 end
 

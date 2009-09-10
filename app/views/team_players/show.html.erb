@@ -1,4 +1,4 @@
-<% title "Team Player" %>
+gg<% title "Team Player" %>
 
 <p>
   <strong>Alias:</strong>
@@ -13,12 +13,8 @@
   <%=h @team_player.hiredate %>
 </p>
 <p>
-  <strong>Firedate:</strong>
-  <%=h @team_player.firedate %>
+  <%= link_to "Edit", edit_club_team_team_player_path(@club, @team, @team_player) %> |
+  <%= link_to "Destroy", club_team_team_player_path(@club, @team, @team_player), :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", club_team_team_player_path(@club, @team, @team_player) %>
 </p>
 
-<p>
-  <%= link_to "Edit", edit_team_player_path(@team_player) %> |
-  <%= link_to "Destroy", @team_player, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", team_players_path %>
-</p>

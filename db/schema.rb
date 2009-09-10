@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090909045328) do
+ActiveRecord::Schema.define(:version => 20090909052000) do
 
   create_table "clubs", :force => true do |t|
     t.string   "name"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20090909045328) do
     t.integer  "team_icon_file_size"
     t.datetime "team_icon_updated_at"
     t.integer  "teamcategory_id",        :null => false
+    t.integer  "team_players_count"
   end
 
 end

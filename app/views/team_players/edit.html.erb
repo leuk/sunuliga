@@ -3,6 +3,7 @@
 <%= render :partial => 'form' %>
 
 <p>
-  <%= link_to "Show", @team_player %> |
-  <%= link_to "View All", team_players_path %>
+  <%= link_to "Show", club_team_team_player_path(@club, @team, @team_player) %> |
+  <%= link_to "View All", club_team_team_players_path(@club, @team) %>
 </p>
+

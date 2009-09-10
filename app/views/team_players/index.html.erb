@@ -1,24 +1,4 @@
 <% title "Team Players" %>
-
-<table>
-  <tr>
-    <th>Alias</th>
-    <th>Number</th>
-    <th>Hiredate</th>
-    <th>Firedate</th>
-  </tr>
-  <% for team_player in @team_players %>
-    <tr>
-      <td><%=h team_player.alias %></td>
-      <td><%=h team_player.number %></td>
-      <td><%=h team_player.hiredate %></td>
-      <td><%=h team_player.firedate %></td>
-      <td><%#= link_to "Show", team_player %></td>
-      <td><%#= link_to "Edit", edit_team_player_path(team_player) %></td>
-      <td><%#= link_to "Destroy", team_player, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
-
-<p><%= link_to "New Team Player", new_club_team_team_player_path(@club, @team, @team_player) %></p>
+<%= render @team_players %>
+<%= link_to "New Team Player", new_club_team_team_player_path(@club, @team, @team_player) %></p>
 

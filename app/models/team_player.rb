@@ -1,5 +1,5 @@
 class TeamPlayer < ActiveRecord::Base
-  attr_accessible :alias, :number, :hiredate, :team_id, :position_id, :gtp_icon
+  attr_accessible :alias, :number, :hiredate, :team_id, :position_id, :tp_icon
 
 # => Self's Associations
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
